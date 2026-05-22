@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BK동영테크 · BK Dong Yeong Tech — 리튬프리 고체배터리 전문기업</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo-area">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    </div>
+    <div class="logo-text">
+      <div class="logo-ko">(주)BK동영테크</div>
+      <div class="logo-en">BK DONG YEONG TECH</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#about">회사소개</a>
+    <a href="#technology">기술</a>
+    <a href="#products">제품</a>
+    <a href="#applications">적용분야</a>
+    <a href="#global">글로벌</a>
+    <a href="#contact">문의</a>
+  </div>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">제품 문의</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg">
+    <svg width="100%" height="100%" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="h1" cx="75%" cy="40%" r="45%">
+          <stop offset="0%" stop-color="#00A896" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#00A896" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1400" height="600" fill="url(#h1)"/>
+      <g stroke="#00A896" stroke-width="0.5" opacity="0.08">
+        <line x1="800" y1="0" x2="800" y2="600"/>
+        <line x1="900" y1="0" x2="900" y2="600"/>
+        <line x1="1000" y1="0" x2="1000" y2="600"/>
+        <line x1="1100" y1="0" x2="1100" y2="600"/>
+        <line x1="1200" y1="0" x2="1200" y2="600"/>
+        <line x1="700" y1="0" x2="1400" y2="600"/>
+        <line x1="700" y1="600" x2="1400" y2="0"/>
+      </g>
+      <g stroke="#00A896" stroke-width="0.4" opacity="0.12">
+        <circle cx="1050" cy="300" r="100" fill="none"/>
+        <circle cx="1050" cy="300" r="180" fill="none"/>
+        <circle cx="1050" cy="300" r="260" fill="none"/>
+      </g>
+      <g stroke="#00A896" stroke-width="1.2" opacity="0.4">
+        <line x1="980" y1="250" x2="1050" y2="300"/><circle cx="980" cy="250" r="4" fill="#00A896"/>
+        <line x1="1130" y1="260" x2="1050" y2="300"/><circle cx="1130" cy="260" r="4" fill="#00A896"/>
+        <line x1="1000" y1="380" x2="1050" y2="300"/><circle cx="1000" cy="380" r="4" fill="#00A896"/>
+        <line x1="1110" y1="370" x2="1050" y2="300"/><circle cx="1110" cy="370" r="4" fill="#00A896"/>
+        <circle cx="1050" cy="300" r="12" fill="none" stroke="#00A896" stroke-width="1.5"/>
+        <circle cx="1050" cy="300" r="4" fill="#00A896"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-dot"></div>
+      <span class="hero-eyebrow-text">LITHIUM-FREE SOLID BATTERY · 리튬프리 고체배터리 전문기업</span>
+    </div>
+    <h1>세계가 <em>주목하는</em><br>차세대 배터리 기술</h1>
+    <div class="hero-en">The World's Safest, Most Advanced Lithium-Free Battery</div>
+    <p class="hero-desc">BK동영테크는 2010년 창립 이래 리튬이 없는 고체배터리(LFS) 기술을 연구·개발·제조하는 대한민국 대표 이차전지 기업입니다. 미국 NASA 파트너사, 펜타곤 납품, 인도·스웨덴·사우디아라비아 등 글로벌 공급망을 보유하고 있습니다.</p>
+    <p class="hero-desc-en">Founded in 2010, BK Dong Yeong Tech is Korea's leading Lithium-Free Solid (LFS) battery R&amp;D and manufacturing company, supplying to NASA partners, Pentagon contractors, and global customers across the US, India, Europe &amp; Middle East.</p>
+    <div class="hero-awards">
+      <div class="award-chip">
+        <span class="award-chip-icon">🏆</span>
+        <span class="award-chip-text">2021 장영실 국제과학상 에너지부문</span>
+      </div>
+      <div class="award-chip">
+        <span class="award-chip-icon">🥇</span>
+        <span class="award-chip-text">2023 ESG 포럼 이차전지부문 대상</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <button class="btn btn-teal" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">제품 보기 · View Products</button>
+      <button class="btn btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">회사 소개 · About Us</button>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-box">
+    <span class="stat-num">2010</span>
+    <span class="stat-ko">창립연도</span>
+    <span class="stat-en">Year Established</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-num">277</span>
+    <span class="stat-ko">Wh/kg 에너지밀도</span>
+    <span class="stat-en">Energy Density</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-num">-40°C</span>
+    <span class="stat-ko">저온 동작 보증</span>
+    <span class="stat-en">Cold Operation</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-num">20억+</span>
+    <span class="stat-ko">연매출 (2022)</span>
+    <span class="stat-en">Annual Revenue (KRW)</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-num">9개국</span>
+    <span class="stat-ko">글로벌 공급</span>
+    <span class="stat-en">Countries Supplied</span>
+  </div>
+  <div class="stat-box">
+    <span class="stat-num">0</span>
+    <span class="stat-ko">열폭주 위험</span>
+    <span class="stat-en">Thermal Runaway Risk</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Company Overview · 회사 개요</div></div>
+  <div class="section-title-ko">BK동영테크 회사 소개</div>
+  <div class="section-title-en">BK DONG YEONG TECH CO., LTD.</div>
+  <div class="overview-grid">
+    <div class="overview-info">
+      <table class="info-table">
+        <tr><td class="info-key">회사명<span class="info-val-en">Company</span></td><td class="info-val">(주)BK동영테크<span class="info-val-en">BK Dong Yeong Tech Co., Ltd.</span></td></tr>
+        <tr><td class="info-key">설립일<span class="info-val-en">Established</span></td><td class="info-val">2010년 3월 10일<span class="info-val-en">March 10, 2010</span></td></tr>
+        <tr><td class="info-key">본사<span class="info-val-en">Headquarters</span></td><td class="info-val">경기도 수원시 권선구<br>오목천로 152번길 75, 3층<span class="info-val-en">75, Omokcheon-ro 152beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do</span></td></tr>
+        <tr><td class="info-key">생산시설<span class="info-val-en">Production</span></td><td class="info-val">김제 공장 13,885m²<span class="info-val-en">Gimje Plant · 0.3GW Capacity · 2 Lines</span></td></tr>
+        <tr><td class="info-key">연매출<span class="info-val-en">Revenue</span></td><td class="info-val">20억 원 이상 (2022)<span class="info-val-en">₩2B+ (2022)</span></td></tr>
+        <tr><td class="info-key">연구소<span class="info-val-en">R&amp;D Center</span></td><td class="info-val">2015년 3월 설립<span class="info-val-en">Est. March 2015</span></td></tr>
+        <tr><td class="info-key">통신사 검증<span class="info-val-en">Telecom Verified</span></td><td class="info-val">LG유플러스 · KT · SKT<span class="info-val-en">Korea's Major 3 Carriers</span></td></tr>
+        <tr><td class="info-key">홈페이지<span class="info-val-en">Website</span></td><td class="info-val">www.bdk.kr</td></tr>
+        <tr><td class="info-key">이메일<span class="info-val-en">Email</span></td><td class="info-val">lkh-hartmann@naver.com</td></tr>
+        <tr><td class="info-key">대표번호<span class="info-val-en">Phone</span></td><td class="info-val">+82-31-295-4046</td></tr>
+      </table>
+      <div class="cert-row">
+        <span class="cert-tag">ISO 9001</span>
+        <span class="cert-tag">ISO 14001</span>
+        <span class="cert-tag">ISO 45001</span>
+        <span class="cert-tag">IATF 16949</span>
+        <span class="cert-tag">INNO-BIZ</span>
+        <span class="cert-tag">UL94</span>
+        <span class="cert-tag">특허 다수 보유</span>
+      </div>
+    </div>
+    <div class="awards-panel">
+      <div style="font-size:11px;letter-spacing:2px;color:var(--gold);margin-bottom:1rem;font-weight:500;">주요 수상 · AWARDS &amp; RECOGNITION</div>
+      <div class="award-card">
+        <div class="award-year-badge">2021</div>
+        <div class="award-title-ko">장영실 국제과학상 에너지부문 수상</div>
+        <div class="award-title-en">Jang Yeong-sil International Science Award — Energy Sector</div>
+        <div class="award-body">한국 최고 권위의 과학기술상. 에너지 부문에서 LFS 배터리 기술 혁신을 인정받아 수상.</div>
+      </div>
+      <div class="award-card">
+        <div class="award-year-badge">2023</div>
+        <div class="award-title-ko">2023 한국 ESG 포럼 이차전지 부문 대상</div>
+        <div class="award-title-en">Korea ESG Forum Grand Prize — Secondary Cell Division</div>
+        <div class="award-body">친환경 에너지 기술 혁신 및 지속가능 경영 분야 최우수 기업으로 선정.</div>
+      </div>
+      <div class="award-card">
+        <div class="award-year-badge">2023</div>
+        <div class="award-title-ko">한국자동차연구원 혁신 이차전지 기업 선정</div>
+        <div class="award-title-en">KATECH — Innovative Secondary Battery Company</div>
+        <div class="award-body">자동차 부품사 대상 혁신 이차전지 기업으로 공식 선정. 모빌리티 배터리 공급 기반 확립.</div>
+      </div>
+      <div class="award-card">
+        <div class="award-year-badge">2023</div>
+        <div class="award-title-ko">전라북도 R&amp;D 혁신기술 기업 선정</div>
+        <div class="award-title-en">Jeonbuk Province R&amp;D Technology Innovation Company</div>
+        <div class="award-body">2023 대한민국 R&amp;D 대전 기술혁신기업으로 선정.</div>
+      </div>
+      <div class="award-card" style="border-left-color:var(--teal);">
+        <div class="award-year-badge" style="background:var(--teal);">2015~</div>
+        <div class="award-title-ko">ETRI 기술이전 &amp; AI-IoT 바우처 사업</div>
+        <div class="award-title-en">ETRI Technology Transfer &amp; AI-IoT Voucher Project</div>
+        <div class="award-body">한국전자통신연구원과의 공식 기술이전 및 지능형 ESS 시스템 AI-IoT 사업 수행.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY PEOPLE -->
+<section style="background:var(--bg2);" id="team">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Leadership · 핵심 인력</div></div>
+  <div class="section-title-ko">핵심 R&amp;D 인력</div>
+  <div class="section-title-en">KEY MANAGEMENT &amp; TECHNICAL TEAM</div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-role">CEO · 대표이사</div>
+      <div class="team-name">이기홍 대표</div>
+      <div class="team-name-en">Lee Ki Hong — Chief Executive Officer</div>
+      <ul class="team-career">
+        <li>삼성전자 소프트웨어 엔지니어 (1988~1996)</li>
+        <li>Daeya Electronics — 통신모듈 &amp; 신소재 개발 (1997~2010)</li>
+        <li>BK동영테크 대표이사 (2011~현재)</li>
+        <li>수원대학교 산업공학과</li>
+        <li style="color:#8BA0BB;font-size:11px;margin-top:6px;">Samsung Electronics SW Engineer → Daeya Electronics CEO → BK Dong Yeong Tech CEO</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <div class="team-role">CTO · 연구개발 총괄</div>
+      <div class="team-name">연구개발 이사</div>
+      <div class="team-name-en">Director of R&amp;D — Chief Technology Officer (2023~)</div>
+      <ul class="team-career">
+        <li>LFS 배터리 연구개발 총괄</li>
+        <li>LGM Technology CTO (2018~2021)</li>
+        <li>Korea Smart Environment CTO (2021~2023)</li>
+        <li>전기추진 시스템 &amp; 에너지 재생 솔루션</li>
+        <li>한국에너지평가원 에너지기술평가위원</li>
+        <li style="color:#8BA0BB;font-size:11px;margin-top:6px;">Energy Evaluation Committee · Electric Propulsion Systems</li>
+      </ul>
+    </div>
+    <div class="team-card">
+      <div class="team-role">기술고문 · Technical Advisor</div>
+      <div class="team-name">이상천 교수</div>
+      <div class="team-name-en">Prof. Lee Sang Chun — Technical Advisor</div>
+      <ul class="team-career">
+        <li>경남대학교 신소재공학과 교수 (1993~2015)</li>
+        <li>AMES National Laboratory 연구원 (1991~1993, 미국)</li>
+        <li>일리노이대학 물리화학 석사 · 분석화학 박사</li>
+        <li>미국기계학회(ASME) Melville Medal 수상</li>
+        <li>신재생에너지 기술 연구 &amp; LFS 배터리 신소재 개발</li>
+        <li style="color:#8BA0BB;font-size:11px;margin-top:6px;">ASME Melville Medal · PhD Analytical Chemistry, Univ. of Illinois</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section id="technology" class="dark-section">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Core Technology · 핵심 기술</div></div>
+  <div class="section-title-ko">LFS 배터리 기술 우위</div>
+  <div class="section-title-en">LITHIUM-FREE SOLID (LFS) BATTERY — TECHNOLOGY ADVANTAGES</div>
+  <div class="tech-features">
+    <div class="tech-feat">
+      <div class="feat-num">01</div>
+      <div class="feat-title-ko">리튬프리 화학 구조</div>
+      <div class="feat-title-en">Lithium-Free Chemistry</div>
+      <div class="feat-desc-ko">리튬 미사용, 유해 중금속 없음. 독자 LFS 기술로 고에너지밀도를 유지하면서 기존 배터리의 핵심 위험 요소를 원천 제거.</div>
+      <div class="feat-desc-en">No lithium, no toxic heavy metals. Proprietary chemistry eliminates core dangers while maintaining high energy density.</div>
+    </div>
+    <div class="tech-feat">
+      <div class="feat-num">02</div>
+      <div class="feat-title-ko">열폭주 원천 차단</div>
+      <div class="feat-title-en">Zero Thermal Runaway</div>
+      <div class="feat-desc-ko">고체 전해질 사용으로 가연성 없음. 군사·선박·실내 환경에서 안전성 공식 인증. 화재·폭발 위험 원리적 제로.</div>
+      <div class="feat-desc-en">Solid electrolyte = no flammable materials. Certified for military, marine, and indoor environments.</div>
+    </div>
+    <div class="tech-feat">
+      <div class="feat-num">03</div>
+      <div class="feat-title-ko">극한 온도 범위 동작</div>
+      <div class="feat-title-en">Extreme Temperature Range</div>
+      <div class="feat-desc-ko">-40°C ~ +70°C 충방전 모두 안정 동작. 리튬 배터리가 성능을 40% 잃는 극한 환경에서도 용량 저하 제로.</div>
+      <div class="feat-desc-en">Stable charge/discharge from -40°C to +70°C. Zero capacity loss where lithium loses 40%.</div>
+    </div>
+    <div class="tech-feat">
+      <div class="feat-num">04</div>
+      <div class="feat-title-ko">초고속 충방전</div>
+      <div class="feat-title-en">Ultra-Fast Charge/Discharge</div>
+      <div class="feat-desc-ko">최대 충전 60A (3C-Rate), 방전 80A (4C / Max 10C) 지원. 산업용·군사용·모빌리티의 고출력 수요에 완벽 대응.</div>
+      <div class="feat-desc-en">Max charge 60A (3C-Rate), discharge 80A (4C/Max 10C). Engineered for industrial, military, and EV high-power demands.</div>
+    </div>
+    <div class="tech-feat">
+      <div class="feat-num">05</div>
+      <div class="feat-title-ko">365일 독립 운용</div>
+      <div class="feat-title-en">365-Day Independent Operation</div>
+      <div class="feat-desc-ko">독립형 태양광 가로등에서 실증 완료. 리튬이 충전 불가한 기상 조건에서도 정상 동작. 연중 무휴·날씨 무관 운용.</div>
+      <div class="feat-desc-en">Proven in standalone solar street lights. Operational 365 days regardless of weather or temperature.</div>
+    </div>
+    <div class="tech-feat">
+      <div class="feat-num">06</div>
+      <div class="feat-title-ko">완전 친환경·재활용</div>
+      <div class="feat-title-en">Eco-Friendly &amp; Recyclable</div>
+      <div class="feat-desc-ko">유해 중금속 미사용, 완전 재활용 가능. 기존 배터리 대비 전자폐기물 대폭 감소. ISO 14001 환경경영 인증 취득.</div>
+      <div class="feat-desc-en">No toxic heavy metals, fully recyclable. Dramatically reduces e-waste. ISO 14001 certified.</div>
+    </div>
+  </div>
+
+  <!-- DENSITY TIMELINE -->
+  <div style="margin-top:3rem;">
+    <div style="font-size:11px;letter-spacing:3px;color:var(--teal);margin-bottom:1rem;">에너지밀도 개발 이력 · ENERGY DENSITY DEVELOPMENT HISTORY</div>
+    <div class="density-timeline">
+      <div class="density-item">
+        <div class="d-year">2011</div>
+        <div class="d-wh" style="color:var(--muted);">153</div>
+        <div class="d-label">Wh/kg</div>
+      </div>
+      <div class="density-item">
+        <div class="d-year">2016</div>
+        <div class="d-wh" style="color:var(--blue);">226</div>
+        <div class="d-label">Wh/kg</div>
+      </div>
+      <div class="density-item">
+        <div class="d-year">2019</div>
+        <div class="d-wh" style="color:var(--blue);">235</div>
+        <div class="d-label">Wh/kg</div>
+      </div>
+      <div class="density-item">
+        <div class="d-year">2020</div>
+        <div class="d-wh" style="color:var(--blue);">247</div>
+        <div class="d-label">Wh/kg</div>
+      </div>
+      <div class="density-item">
+        <div class="d-year">2022</div>
+        <div class="d-wh" style="color:var(--blue);">256</div>
+        <div class="d-label">Wh/kg</div>
+      </div>
+      <div class="density-item current">
+        <div class="d-year">2023 현재</div>
+        <div class="d-wh">277</div>
+        <div class="d-label">Wh/kg ★</div>
+      </div>
+      <div class="density-item next">
+        <div class="d-year">차세대 목표</div>
+        <div class="d-wh" style="color:var(--teal2);">305+</div>
+        <div class="d-label">Wh/kg (예정)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Product Lineup · 제품 라인업</div></div>
+  <div class="section-title-ko">LFS 배터리 셀 제품군</div>
+  <div class="section-title-en">LITHIUM-FREE SOLID BATTERY CELLS — SPECIFICATIONS</div>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-type">원통형 · CYLINDER TYPE</div>
+      <div class="product-model">01542DY</div>
+      <div class="spec-list">
+        <div class="spec-row"><span class="spec-key">정격 전압</span><span class="spec-val">4.2V</span></div>
+        <div class="spec-row"><span class="spec-key">정격 용량</span><span class="spec-val">15Wh</span></div>
+        <div class="spec-row"><span class="spec-key">최대 충전 전류</span><span class="spec-val">4,000mA (3C)</span></div>
+        <div class="spec-row"><span class="spec-key">최대 방전 전류</span><span class="spec-val">6,000mA (3C)</span></div>
+        <div class="spec-row"><span class="spec-key">동작 온도</span><span class="spec-val">-30°C ~ 70°C</span></div>
+        <div class="spec-row"><span class="spec-key">중량</span><span class="spec-val">60g</span></div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-type">원통형 · CYLINDER TYPE</div>
+      <div class="product-model">02142DY</div>
+      <div class="spec-list">
+        <div class="spec-row"><span class="spec-key">정격 전압</span><span class="spec-val">4.2V</span></div>
+        <div class="spec-row"><span class="spec-key">정격 용량</span><span class="spec-val">21Wh</span></div>
+        <div class="spec-row"><span class="spec-key">최대 충전 전류</span><span class="spec-val">6,000mA (3C)</span></div>
+        <div class="spec-row"><span class="spec-key">최대 방전 전류</span><span class="spec-val">6,000mA (3C)</span></div>
+        <div class="spec-row"><span class="spec-key">동작 온도</span><span class="spec-val">-30°C ~ 70°C</span></div>
+        <div class="spec-row"><span class="spec-key">중량</span><span class="spec-val">60g</span></div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-type">각형 · SQUARE TYPE</div>
+      <div class="product-model">08442DY</div>
+      <div class="spec-list">
+        <div class="spec-row"><span class="spec-key">정격 전압</span><span class="spec-val">4.2V DC</span></div>
+        <div class="spec-row"><span class="spec-key">정격 용량</span><span class="spec-val">84Wh</span></div>
+        <div class="spec-row"><span class="spec-key">최대 충전</span><span class="spec-val">60A (3C-Rate)</span></div>
+        <div class="spec-row"><span class="spec-key">최대 방전</span><span class="spec-val">80A (4C / Max 10C)</span></div>
+        <div class="spec-row"><span class="spec-key">내부저항</span><span class="spec-val">≤1.5mΩ</span></div>
+        <div class="spec-row"><span class="spec-key">에너지밀도</span><span class="spec-val">247Wh/kg</span></div>
+        <div class="spec-row"><span class="spec-key">동작 온도</span><span class="spec-val">-40°C ~ 70°C</span></div>
+        <div class="spec-row"><span class="spec-key">중량</span><span class="spec-val">350g (±10g)</span></div>
+      </div>
+    </div>
+    <div class="product-card product-highlight">
+      <div class="product-type">차세대 · NEXT-GENERATION</div>
+      <div class="product-model">HYPER LFS</div>
+      <div class="spec-list">
+        <div class="spec-row"><span class="spec-key">현재 용량</span><span class="spec-val">94Wh / 4.2V</span></div>
+        <div class="spec-row"><span class="spec-key">현재 밀도</span><span class="spec-val">277Wh/kg</span></div>
+        <div class="spec-row"><span class="spec-key">차세대 목표</span><span class="spec-val">110Wh (+16%)</span></div>
+        <div class="spec-row"><span class="spec-key">동작 온도</span><span class="spec-val">-40°C ~ 70°C</span></div>
+        <div class="spec-row"><span class="spec-key">ETRI 공동연구</span><span class="spec-val">입자 미세화 기술</span></div>
+        <div class="spec-row"><span class="spec-key">개발 상태</span><span class="spec-val">진행 중 · In Development</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications" class="dark-section">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Applications · 적용 분야</div></div>
+  <div class="section-title-ko">LFS 배터리 적용 분야</div>
+  <div class="section-title-en">PROVEN DEPLOYMENT USE CASES &amp; CUSTOMER APPLICATIONS</div>
+  <div class="app-grid2">
+    <div class="app-card2">
+      <div class="app-num">01</div>
+      <div class="app-name-ko">전기버스 (E-Bus)</div>
+      <div class="app-name-en">Electric Bus</div>
+      <div class="app-capacity">316KWh · 600V · 약 300km 주행</div>
+      <div class="app-client">Beomhan Mobility 공급 계약</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">02</div>
+      <div class="app-name-ko">터널굴착 덤프트럭</div>
+      <div class="app-name-en">Dump Truck (Tunnel)</div>
+      <div class="app-capacity">300~650KWh · 30톤급</div>
+      <div class="app-client">Saean Group · 일본/사우디 수출</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">03</div>
+      <div class="app-name-ko">태양광 독립 가로등</div>
+      <div class="app-name-en">Solar Street Lighting</div>
+      <div class="app-capacity">50W~125W · 365일 운용</div>
+      <div class="app-client">ETRI 포함 180개 납품처</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">04</div>
+      <div class="app-name-ko">가정용 벽걸이 ESS</div>
+      <div class="app-name-en">Home Wall-mount ESS</div>
+      <div class="app-capacity">15KWh · 태양광 연계</div>
+      <div class="app-client">충남 태안 태양광 카페 납품</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">05</div>
+      <div class="app-name-ko">군사·방위 산업</div>
+      <div class="app-name-en">Military / Defense</div>
+      <div class="app-capacity">펜타곤 계약 · 지뢰제거 로봇</div>
+      <div class="app-client">KOTUKU · GSTA (미국 방산)</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">06</div>
+      <div class="app-name-ko">드론 · UAV</div>
+      <div class="app-name-en">Drone / UAV</div>
+      <div class="app-capacity">정찰용 · 배달용</div>
+      <div class="app-client">DreamFly Innovation (인도)</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">07</div>
+      <div class="app-name-ko">지게차 BMS</div>
+      <div class="app-name-en">Forklift BMS</div>
+      <div class="app-capacity">연속 방전 200A · 피크 320A</div>
+      <div class="app-client">KOTUKU (미국 펜타곤 납품)</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">08</div>
+      <div class="app-name-ko">선박·요트</div>
+      <div class="app-name-en">Marine / Yacht</div>
+      <div class="app-capacity">4.7KWh ~ 45KWh</div>
+      <div class="app-client">MBS Solution(싱가포르) · 전기어선</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">09</div>
+      <div class="app-name-ko">전동 오토바이</div>
+      <div class="app-name-en">Electric Motorcycle</div>
+      <div class="app-capacity">4.8KWh · 고출력 800A 순간방전</div>
+      <div class="app-client">G-Star · Gravton Motors (인도)</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">10</div>
+      <div class="app-name-ko">골프 카트</div>
+      <div class="app-name-en">Golf Cart</div>
+      <div class="app-capacity">6KWh / 72V · 20km 주행</div>
+      <div class="app-client">ADC Energy (LA 골프장 납품)</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">11</div>
+      <div class="app-name-ko">전동 킥보드·E-Bike</div>
+      <div class="app-name-en">E-Bike / Kickboard</div>
+      <div class="app-capacity">576Wh ~ 640Wh</div>
+      <div class="app-client">G-Star</div>
+    </div>
+    <div class="app-card2">
+      <div class="app-num">12</div>
+      <div class="app-name-ko">전동 휠체어</div>
+      <div class="app-name-en">Electric Wheelchair</div>
+      <div class="app-capacity">1.2KWh · 의료용</div>
+      <div class="app-client">Rehasense (프랑스)</div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL PARTNERS -->
+<section id="global">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Global Partnerships · 글로벌 파트너</div></div>
+  <div class="section-title-ko">글로벌 공급 파트너</div>
+  <div class="section-title-en">WORLDWIDE SUPPLY NETWORK &amp; PARTNERSHIPS</div>
+  <div class="global-map">
+    <div class="global-card">
+      <div class="global-country">🇺🇸 미국 · USA</div>
+      <div class="global-partner">NASA / ADC Energy</div>
+      <div class="global-desc">NASA 공식 파트너사. 월 106KWh → 1MWh LFS 배터리팩 PO. FAA 인증 진행 중. 공식 공급 계약 체결.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇺🇸 미국 · USA (Pentagon)</div>
+      <div class="global-partner">KOTUKU / GSTA</div>
+      <div class="global-desc">펜타곤 방산업체. 지게차·오토바이 BMS 공급 계약. 초고속 충방전 배터리 납품.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇮🇳 인도 · India</div>
+      <div class="global-partner">Gravton Motors</div>
+      <div class="global-desc">고출력 오토바이 및 정찰 드론 배터리. 인도 1차 PO 수주. 공급 계약 체결.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇮🇳 인도 · India</div>
+      <div class="global-partner">DreamFly Innovation</div>
+      <div class="global-desc">드론·전기추진 시스템용 배터리. 전동 비행 어플리케이션 파트너십.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇸🇪 스웨덴 · Sweden</div>
+      <div class="global-partner">Echandia Marine</div>
+      <div class="global-desc">전기 선박 배터리 시스템. 크루즈·상업용 선박 전동화 파트너.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇸🇦 사우디 · Saudi Arabia</div>
+      <div class="global-partner">Solar ESS / Dump Truck</div>
+      <div class="global-desc">가정용 태양광 ESS 및 모바일 충전 시스템. 터널 굴착 덤프트럭 배터리 수출.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇺🇸 미국 LA · USA (LA)</div>
+      <div class="global-partner">ADC Energy (Golf)</div>
+      <div class="global-desc">로스앤젤레스 골프장 골프카트 6KWh / 72V 배터리팩 납품.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇸🇬 싱가포르 · Singapore</div>
+      <div class="global-partner">MBS Solution</div>
+      <div class="global-desc">요트 배터리팩 4.7KWh. 해양 레저 전동화 파트너.</div>
+    </div>
+    <div class="global-card">
+      <div class="global-country">🇫🇷 프랑스 · France</div>
+      <div class="global-partner">Rehasense</div>
+      <div class="global-desc">전동 휠체어 배터리 1.2KWh. 의료·모빌리티 전동화 공급.</div>
+    </div>
+  </div>
+</section>
+
+<!-- JAPAN PARTNERSHIP BAND -->
+<div class="japan-band">
+  <div class="japan-inner">
+    <div>
+      <div class="japan-label">JAPAN MARKET PARTNER · 일본 시장 파트너</div>
+      <div class="japan-title">일본 독립법인 POWER DO와 함께 일본 시장 개척</div>
+      <div class="japan-desc">BK동영테크의 LFS 배터리 기술은 일본 독립법인 POWER DO를 통해 일본 시장에 공급됩니다. 일본 내 파트너십, 투자, 공급 문의는 POWER DO Japan으로 연락주시기 바랍니다.<br>Our LFS battery technology is marketed in Japan through our independent Japanese entity, POWER DO Japan.</div>
+    </div>
+    <div>
+      <div class="japan-logo">POWER DO</div>
+      <div class="japan-logo-sub">JAPAN INDEPENDENT ENTITY · 日本独立法人</div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="gray-section">
+  <div class="section-label"><div class="section-label-line"></div><div class="section-label-text">Contact · 문의</div></div>
+  <div class="section-title-ko">제품 문의 &amp; 연락처</div>
+  <div class="section-title-en">GET IN TOUCH — PARTNERSHIP, SALES &amp; INVESTMENT INQUIRIES</div>
+  <div class="contact-wrap">
+    <div>
+      <div class="contact-info-card">
+        <div class="contact-field">
+          <div class="contact-key">회사명 · COMPANY</div>
+          <div class="contact-val">(주)BK동영테크</div>
+          <div class="contact-val-sub">BK Dong Yeong Tech Co., Ltd.</div>
+        </div>
+        <div class="contact-field">
+          <div class="contact-key">본사 주소 · HEADQUARTERS</div>
+          <div class="contact-val">경기도 수원시 권선구 오목천로 152번길 75, 3층</div>
+          <div class="contact-val-sub">75, Omokcheon-ro 152beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do, Korea</div>
+        </div>
+        <div class="contact-field">
+          <div class="contact-key">대표 전화 · PHONE</div>
+          <div class="contact-val">+82-31-295-4046</div>
+          <div class="contact-val-sub">FAX: +82-31-225-4001</div>
+        </div>
+        <div class="contact-field">
+          <div class="contact-key">이메일 · EMAIL</div>
+          <div class="contact-val">lkh-hartmann@naver.com</div>
+        </div>
+        <div class="contact-field">
+          <div class="contact-key">홈페이지 · WEBSITE</div>
+          <div class="contact-val">www.bdk.kr</div>
+        </div>
+        <div class="contact-field">
+          <div class="contact-key">생산 공장 · PLANT</div>
+          <div class="contact-val">전북 김제시 (13,885m²)</div>
+          <div class="contact-val-sub">Gimje, Jeollabuk-do · 0.3GW Capacity · 2 Production Lines</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <div style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:1.5rem;">제품 문의 · Product Inquiry</div>
+        <div class="form-row">
+          <label class="form-label">이름 / Name *</label>
+          <input class="form-input" type="text" placeholder="성함을 입력하세요"/>
+        </div>
+        <div class="form-row">
+          <label class="form-label">회사명 / Company</label>
+          <input class="form-input" type="text" placeholder="회사명"/>
+        </div>
+        <div class="form-row">
+          <label class="form-label">이메일 / Email *</label>
+          <input class="form-input" type="email" placeholder="email@example.com"/>
+        </div>
+        <div class="form-row">
+          <label class="form-label">문의 유형 / Inquiry Type</label>
+          <select class="form-input form-select">
+            <option>제품 구매 문의 · Product Purchase</option>
+            <option>기술 제휴 · Technology Partnership</option>
+            <option>투자 문의 · Investment</option>
+            <option>대리점 · Distributor Inquiry</option>
+            <option>기타 · Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label class="form-label">문의 내용 / Message *</label>
+          <textarea class="form-input" placeholder="문의 내용을 입력하세요 / Please enter your message"></textarea>
+        </div>
+        <button class="btn-submit">문의 보내기 · SEND INQUIRY</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo-ko">(주)BK동영테크</div>
+      <div class="footer-logo-en">BK DONG YEONG TECH CO., LTD.</div>
+      <p class="footer-desc">리튬프리 고체배터리(LFS) 전문 연구개발·제조 기업<br>World's Safest Battery · A New Game-Changing Battery</p>
+    </div>
+    <div>
+      <div class="footer-col-title">QUICK LINKS</div>
+      <a class="footer-link" href="#about">회사 소개 · About</a>
+      <a class="footer-link" href="#technology">기술 · Technology</a>
+      <a class="footer-link" href="#products">제품 · Products</a>
+      <a class="footer-link" href="#applications">적용분야 · Applications</a>
+      <a class="footer-link" href="#global">글로벌 · Global</a>
+      <a class="footer-link" href="#contact">문의 · Contact</a>
+    </div>
+    <div>
+      <div class="footer-col-title">CONTACT</div>
+      <a class="footer-link">📍 경기도 수원시 권선구 오목천로 152번길 75, 3층</a>
+      <a class="footer-link">📞 +82-31-295-4046</a>
+      <a class="footer-link">✉️ lkh-hartmann@naver.com</a>
+      <a class="footer-link">🌐 www.bdk.kr</a>
+      <div style="margin-top:1rem;display:flex;gap:8px;flex-wrap:wrap;">
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);background:var(--navy2);padding:3px 8px;">ISO 9001</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);background:var(--navy2);padding:3px 8px;">ISO 14001</span>
+        <span style="font-size:10px;color:rgba(255,255,255,0.25);background:var(--navy2);padding:3px 8px;">INNO-BIZ</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 BK Dong Yeong Tech Co., Ltd. All rights reserved.</span>
+    <span class="footer-site">www.bdk.kr</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
