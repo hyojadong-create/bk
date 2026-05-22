@@ -207,11 +207,14 @@ section{padding:3.6rem 2.5rem;}
 .info-table tr{border-bottom:1px solid var(--border);}
 .info-table td{padding:11px 4px;vertical-align:top;font-size:13px;}
 .info-key{
-  color:var(--cyan);font-size:11px;letter-spacing:1px;width:38%;
-  display:flex;flex-direction:column;gap:2px;
+  color:var(--cyan);font-size:11px;letter-spacing:1px;width:34%;
+  white-space:nowrap;
 }
 .info-val{color:#fff;font-size:13px;}
-.info-val-en{color:var(--muted);font-size:10px;font-weight:400;letter-spacing:.3px;}
+.info-val-en{
+  display:block;color:var(--muted);font-size:10px;
+  font-weight:400;letter-spacing:.3px;margin-top:3px;
+}
 .cert-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.2rem;}
 .cert-tag{
   background:rgba(0,229,255,0.05);border:1px solid rgba(0,229,255,0.2);
