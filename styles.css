@@ -373,6 +373,10 @@ footer{background:#020408;border-top:1px solid var(--border);padding:2.6rem 2.5r
 .footer-copy{font-size:10px;color:#2A4055;}
 .footer-site{font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:2px;color:var(--muted);}
 
+/* ===== ANIMATIONS ===== */
+.pulse{animation:pulse 3s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.3;}50%{opacity:.8;}}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:860px){
   .overview-grid,.contact-wrap{grid-template-columns:1fr;}
