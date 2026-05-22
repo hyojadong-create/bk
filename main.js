@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
     if(!el) return;
     if(el.offsetTop - 100 <= scrollY && el.offsetTop + el.offsetHeight > scrollY) {
       document.querySelectorAll('.nav-links a').forEach(a => {
-        a.style.color = a.getAttribute('href') === '#'+id ? '#02C39A' : 'rgba(255,255,255,0.6)';
+        a.style.color = a.getAttribute('href') === '#'+id ? '#00E5FF' : '#6A8099';
       });
     }
   });
